@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>display:inline实现DIV并排</title> 
+<style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .rootdiv{
+        width: 1000px;
+        height: 500px;
+        background-color: brown;
+        margin: 0 auto;
+    }
+    .one{
+        width: 300px;
+        height: 500px;
+        background-color: chartreuse;
+        float: left;
+        margin:0 10px;
+    }
+    .two{
+        width: 300px;
+        height: 200px;
+        background-color: aquamarine;
+        margin: 10px 0;
+    }
+    
+</style> 
+</head> 
+ 
+<body> 
+    <div class="rootdiv">
+        <div class="one"> </div>
+        <div class="one">
+            <div class="two"> </div>
+            <div class="two"> </div>
+        </div>
+        <div class="one"> </div>
+        
+    </div>
+
+</body> 
+</html> 
